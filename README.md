@@ -11,12 +11,12 @@ following:
 
 ```bash
 cd ExampleChatApplication
-dotnet build ChatClient/ChatClient.csproj -f netcoreapp2.0 -c Release
-dotnet build ChatServer/ChatServer.csproj -f netcoreapp2.0 -c Release
+dotnet build ChatClient/ChatClient.csproj -f netcoreapp6.0 -c Release
+dotnet build ChatServer/ChatServer.csproj -f netcoreapp6.0 -c Release
 # Run server in one terminal on default port with TLS support
-dotnet exec ChatServer/bin/Release/netcoreapp2.0/ChatServer.dll --c ChatServer/server.pfx
+dotnet exec ChatServer/bin/Release/netcoreapp6.0/ChatServer.dll --c ChatServer/server.pfx
 # Run client in another terminal
-dotnet exec ChatClient/bin/Release/netcoreapp2.0/ChatClient.dll username 127.0.0.1/ChatClient
+dotnet exec ChatClient/bin/Release/netcoreapp6.0/ChatClient.dll username 127.0.0.1/ChatClient
 ```
 
 The build process will also generate .NET executables compatible with .NET frame 4.7.1 and Mono 5.
